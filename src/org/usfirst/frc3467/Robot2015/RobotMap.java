@@ -13,6 +13,7 @@ package org.usfirst.frc3467.Robot2015;
     
 import edu.wpi.first.wpilibj.*;
 import edu.wpi.first.wpilibj.livewindow.LiveWindow;
+import edu.wpi.first.wpilibj.tables.ITable;
 
 import java.util.Vector;
 
@@ -27,6 +28,11 @@ import org.usfirst.frc3467.Robot2015.subsystems.DriveBase;
 @SuppressWarnings("unused")
 public class RobotMap {
 	
+
+
+	public static void resetGyro(){
+		RobotMap.driveBaseGyro1.reset();
+	}
 
 	//compressor
 	public Compressor maincompressor;
